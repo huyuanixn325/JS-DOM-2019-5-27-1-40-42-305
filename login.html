@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+<body>
+
+<label>账户：</label><input type="text" id="usercode" name="usercode">
+<label>密码：</label><input type="text" id="password" name="password">
+<input type="button" value="登录" onclick="login()">
+<script>
+    // write your code here
+    function login(){
+        var usercode = document.getElementById("usercode");
+        var password = document.getElementById("password");
+
+        if (usercode.value=="123"&&password.value=="123") {
+            alert("登录成功!!!");
+        }else {
+            usercode.value="";
+            password.value="";
+        }
+    }
+</script>
+</body>
+</html>
